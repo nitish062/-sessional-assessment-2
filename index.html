@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./images/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Person Management System</title>
+</head>
+<body>
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#main-div"><img src="./images/person.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">conact us</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input id="idinput" class="form-control mr-sm-2" type="search" placeholder="Enter ID" aria-label="Search">
+            <button id="search-button" class="btn btn-outline-info" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+      <div id="main-div">
+        <div id="info-div">
+            
+            <div class="info-divs"><img class="info-images" src="./images/location.png"><span id="address"></span></div>
+            
+            <div class="info-divs"><img class="info-images" src="./images/phone.png"><span id="phone"></span></div>
+            
+            <div class="info-divs"><img class="info-images" src="./images/email.png"><span id="email"></span></div>
+            
+            <div class="info-divs"><img class="info-images" src="./images/website.png"><span id="website"></span></div>
+
+        </div>
+        <div id="sub-div">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="input">Full Name</label>
+                    <input type="text" class="form-control" id="fullname" disabled>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" disabled>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="zipcode">Zipcode</label>
+                  <input type="text" class="form-control" id="zipcode" disabled>
+                </div>
+                <div class="form-group">
+                  <label for="companyname">Company Name</label>
+                  <input type="text" class="form-control" id="companyname" disabled>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="phrase">Catch Phrase</label>
+                    <input type="text" class="form-control" id="phrase" disabled>
+                  </div>
+              </form>
+        </div>
+      </div>
+
+       
+    
+    <div id="copyright">
+      <span>&copy copyright 2022 | All Rights Reserved</span> 
+    </div>  
+<script src="./main.js"></script>
+</body>
+</html>
